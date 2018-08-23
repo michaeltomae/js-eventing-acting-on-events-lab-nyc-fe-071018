@@ -5,7 +5,7 @@ document.addEventListener('keydown', (event) => {
     //180px
     let previousLeft = element.style.left 
     //180px
-    let previousLeftNumber = parseInt(previousLeft.replace('px',''),15)
+    let previousLeftNumber = parseInt(previousLeft.replace('px',''),10)
     if (previousLeftNumber >0) {
       let newLeftNumber = (previousLeftNumber - 1) + "px"
       element.style.left = newLeftNumber
@@ -18,7 +18,7 @@ function moveDodgerRight() {
   if (event.which === 39) {
     let previousRight = element.style.left 
     //180px
-    let previousRightNumber = parseInt(previousRight.replace('px',''), 15)
+    let previousRightNumber = parseInt(previousRight.replace('px',''), 10)
     if (previousRightNumber < 360) {
       let newRightNumber = (previousRightNumber + 1) + "px"
       element.style.left = newRightNumber
